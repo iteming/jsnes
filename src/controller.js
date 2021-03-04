@@ -1,5 +1,5 @@
 var Controller = function () {
-  this.state = new Array(8);
+  this.state = new Array(10);
   for (var i = 0; i < this.state.length; i++) {
     this.state[i] = 0x40;
   }
@@ -13,6 +13,8 @@ Controller.BUTTON_UP = 4;
 Controller.BUTTON_DOWN = 5;
 Controller.BUTTON_LEFT = 6;
 Controller.BUTTON_RIGHT = 7;
+Controller.BUTTON_X = 8;
+Controller.BUTTON_Y = 9;
 
 Controller.prototype = {
   buttonDown: function (key) {
